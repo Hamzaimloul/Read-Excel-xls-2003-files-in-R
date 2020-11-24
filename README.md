@@ -1,3 +1,3 @@
-# Read-Excel-xls-2003-files-in-R
+# Read-Excel-XML-2003-Spreadsheets-in-R
 
-My first commit to GitHub with R
+this function for reading XML Spreadsheets 2003, often they have xls extension.
