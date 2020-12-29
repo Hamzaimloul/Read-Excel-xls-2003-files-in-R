@@ -1,3 +1,5 @@
 # Read-Excel-XML-2003-Spreadsheets-in-R
 
-this function for reading XML Spreadsheets 2003, often they have xls extension.
+This function for reading XML Spreadsheets 2003, often they have xls extension.
+the package 'readxl' can't read in most cases the XML spreadsheets in xls format.
+By using this function, reading these files is possible.
