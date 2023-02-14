@@ -3,11 +3,11 @@
 this repository includes some reproducible functions
 
 ## Data Collection  
-**Read Excel (XML 2003) Spreadsheets in R**  
-There is packages in R to read spreadsheets: readxl::read_xlsx, readxl::read_xls. But these functions do not support xls 2003 spreadsheets, which can be tricky. because in most cases they have xls extension.
-By using this function, reading these files is possible.  
 
-```{r}
+### Read Excel (XML 2003) Spreadsheets in R  
+While there are packages in R to read spreadsheets (`readxl::read_xlsx` and `readxl::read_xls`), they do not support XML 2003 spreadsheets, which can often be misidentified as XLS files due to their file extension. This function provides a solution to reading these files by using the read_xml function from the `xml2` package and the `xml_find_all` function from the `tidyverse` package. The function reads the spreadsheet, identifies the data in the rows and columns, and returns the data in a data frame with the column names derived from the first row of data.
+
+```r
 library(tidyverse)
 library(xml2)
 
